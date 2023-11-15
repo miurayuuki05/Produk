@@ -1,7 +1,7 @@
 # Product Listing
 
 An assigment that were given by my lecturer :
-@RoyanHabibie
+[Royan Habibie Sukarna, S.Kom., M.kom](https://github.com/RoyanHabibie)
 
 ## To Do
 
