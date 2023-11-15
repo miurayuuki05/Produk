@@ -8,45 +8,44 @@ class ItemsList extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: const Text('List Barang'),
-          backgroundColor: Colors.tealAccent,
+          title: const Text('Products'),
+          backgroundColor: Colors.black,
         ),
         body: ListView(
           children: const <Widget>[
-            Produk(content: "Barang A", price: "Rp. 10.000"),
-            Produk(content: "Barang B", price: "Rp. 15.000"),
-            Produk(content: "Barang C", price: "Rp. 230.000"),
-            Produk(content: "Barang D", price: "Rp. 20.000"),
-            Produk(content: "Barang E", price: "Rp. 130.000"),
-            Produk(content: "Barang F", price: "Rp. 10.000"),
-            Produk(content: "Barang G", price: "Rp. 5.000"),
-            Produk(content: "Barang H", price: "Rp. 90.000"),
-            Produk(
-              content: "Barang I",
-            ),
-            Produk(
-              content: "Barang J",
-            ),
+            Produk(barang: "Barang 1", price: "Rp. 220.000"),
+            Produk(barang: "Barang 2", price: "Rp. 14.000"),
+            Produk(barang: "Barang 3", price: "Rp. 20.000"),
+            Produk(barang: "Barang 4", price: "Rp. 24.000"),
+            Produk(barang: "Barang 5", price: "Rp. 130.000"),
+            Produk(barang: "Barang 6", price: "Rp. 10.000"),
+            Produk(barang: "Barang 7", price: "Rp. 5.500"),
+            Produk(barang: "Barang 8", price: "Rp. 70.000"),
+            Produk(barang: "Barang 9", price: "Rp. 12.000"),
+            Produk(barang: "Barang 10", price: "Rp. 222.000"),
           ],
         ));
   }
 }
 
 class Produk extends StatelessWidget {
-  final String content;
+  final String barang;
   final String price;
-  const Produk({super.key, required this.content, this.price = "FREE"});
+  const Produk({super.key, required this.barang, this.price = "FREE"});
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      decoration: BoxDecoration(
-        color: Colors.white,
+      decoration: const BoxDecoration(
+        color: Colors.black,
         boxShadow: [
-          BoxShadow(color: Colors.grey.shade600, spreadRadius: 1, blurRadius: 2)
+          BoxShadow(
+              color: Color.fromARGB(255, 24, 24, 24),
+              spreadRadius: 1,
+              blurRadius: 2)
         ],
       ),
-      height: 70,
+      height: 50,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
@@ -54,17 +53,17 @@ class Produk extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.start,
             children: <Widget>[
               Text(
-                content,
-                style: GoogleFonts.raleway(
-                  fontSize: 20,
-                  fontWeight: FontWeight.bold,
+                barang,
+                style: GoogleFonts.quicksand(
+                  fontSize: 17,
+                  fontWeight: FontWeight.w200,
                 ),
               ),
               Text(
                 price,
-                style: GoogleFonts.raleway(
-                  fontSize: 20,
-                  fontWeight: FontWeight.bold,
+                style: GoogleFonts.quicksand(
+                  fontSize: 14,
+                  fontWeight: FontWeight.w200,
                 ),
               )
             ],

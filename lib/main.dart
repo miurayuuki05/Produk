@@ -14,13 +14,14 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'List Barang',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(
-            seedColor: Colors.tealAccent, brightness: Brightness.dark),
+            seedColor: const Color.fromARGB(255, 0, 0, 0),
+            brightness: Brightness.dark),
         useMaterial3: true,
       ),
-      home: const HomePage(title: 'List Barang'),
+      home: const HomePage(title: 'Ceritanya Olshop'),
     );
   }
 }
@@ -37,13 +38,16 @@ class HomePage extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Align(
-              alignment: Alignment.center,
-              child: Text(
-                'List Barang',
-                style: GoogleFonts.raleway(
-                  fontSize: 35,
-                  fontWeight: FontWeight.bold,
+            Container(
+              margin: const EdgeInsets.only(bottom: 50),
+              child: Align(
+                alignment: Alignment.center,
+                child: Text(
+                  'Ceritanya Olshop',
+                  style: GoogleFonts.raleway(
+                    fontSize: 35,
+                    fontWeight: FontWeight.bold,
+                  ),
                 ),
               ),
             ),
