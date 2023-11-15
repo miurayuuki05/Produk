@@ -10,6 +10,12 @@ class ItemsList extends StatelessWidget {
         appBar: AppBar(
           title: const Text('Products'),
           backgroundColor: Colors.black,
+          actions: [
+            IconButton(
+              onPressed: () {},
+              icon: const Icon(Icons.refresh),
+            )
+          ],
         ),
         body: ListView(
           children: const <Widget>[
