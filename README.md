@@ -1,7 +1,7 @@
 # Product Listing
 
 An assigment that were given by my lecturer :
-Royan Habibie Sukarna, S.Kom., M.kom
+@RoyanHabibie
 
 ## To Do
 
