@@ -44,7 +44,7 @@ class HomePage extends StatelessWidget {
                 alignment: Alignment.center,
                 child: Text(
                   'Ceritanya Olshop',
-                  style: GoogleFonts.raleway(
+                  style: GoogleFonts.quicksand(
                     fontSize: 35,
                     fontWeight: FontWeight.bold,
                   ),
