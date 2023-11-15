@@ -1,16 +1,12 @@
-# lsview
+# Product Listing
 
-A new Flutter project.
+An assigment that were given by my lecturer
 
-## Getting Started
+## To Do
 
-This project is a starting point for a Flutter application.
+- Create a Login page that route to the listing page
+- Create a listing page where all the product were going to be shown (10 Dummy Data)
 
-A few resources to get you started if this is your first Flutter project:
+## Deadline
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+15/11/2023, 08:00 PM, (GMT)+7
